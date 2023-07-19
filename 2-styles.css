@@ -1,0 +1,234 @@
+body
+{
+    padding: 0;
+    margin: 0;
+}
+
+#header-div 
+{
+   /*border: 1px solid black;*/
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    /*background-color: rgb(0, 0,0, 0.5);*/
+    z-index: 1000;
+    position: relative;
+    flex-wrap: nowrap;
+
+}
+
+header div div a 
+{
+    /*background-color: aqua;*/
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+header div div a:hover
+{
+    color: #FF6565;
+}
+
+main
+{
+    height: 600px;
+    background-image: url(../headphones/images/headphones_hero_1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    top: -80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#main-section
+{
+    color: white;
+    text-align: center;
+    margin-top: 150px;
+}
+
+#main-section h1
+{
+    font-size: 50px;
+    font-weight: 300;
+    margin: 0;
+}
+
+#main-section button
+{
+    padding: 10px;
+    width: 200px;
+    background-color: rgb(241, 73, 73);
+    color: white;
+    border-radius: 50px;
+    font-size: larger;
+    margin: 30px;
+    
+    
+}
+
+#main-section button:hover
+{
+    /*background-color: rgb(223, 75, 75);*/
+    opacity: 0.9;
+}
+
+#main-section p
+{
+    margin-top: 0;
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+@media screen and (max-width: 480px)
+{
+    .nav-links
+    {
+        display: none;
+        margin-left: 20px;
+
+    }
+
+}
+
+#what-we-do-main-section
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#what-we-do-main-section p
+{
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    text-align: center;  
+    
+}
+
+
+#icons
+{
+    display: flex;
+    padding: 10px;
+    margin: 0;
+    gap: 50px;
+    align-items: center;
+    
+}
+
+#icons img
+{
+    margin: 50px;
+}
+
+#icons h1
+{
+    text-align: center;
+}
+
+#div-for-music-icon
+{
+    margin-top:15px;
+}
+
+#div-for-hearing-icon
+{
+    margin-top:10px;   
+}
+
+
+/*media query for tablet screen size*/
+
+@media screen and (max-width:768px ) 
+{
+    #icons
+    {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-right: 50px;
+    }
+
+    #div-result-icons
+    {
+        flex-wrap: wrap;
+    }
+    
+}
+
+/*media query for mobile screen size*/
+
+@media screen and (max-width: 480px) 
+{
+    #icons
+    {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-right: 50px;
+       
+    }
+
+    #div-result-icons
+    {
+        flex-wrap: wrap;
+    }
+    
+}
+
+#result-section
+{
+    height: 500px;
+    background-image: url(../headphones/images/headphones_hero_2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.result-section-format
+{
+    text-align: center;
+    color: white;
+    font-family: sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    margin: 20px;
+}
+
+
+#div-result-icons
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-top: 50px;
+    position: relative;
+    
+}
+
+.centered
+{
+    position: absolute;
+    top: 10%;
+    transform: translate(10%, 10%);
+    color: white;
+    margin-left: 22px;
+    text-align: center;
+}
